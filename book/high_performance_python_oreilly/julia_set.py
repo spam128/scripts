@@ -19,7 +19,8 @@ def timefn(fn):
 
     return measure_time
 
-@timefn
+#@timefn
+@profile
 def calculate_z_serial_purepython(maxiter, zs, cs):
     """Counting output list using julia collection update rule"""
     output = [0] * len(zs)
